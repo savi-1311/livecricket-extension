@@ -1,4 +1,4 @@
-# weather-chrome-extension
+# livecricket-extension
 A chrome extension to find the live cricket scores using Cricbuzz API.
 Steps to run the extension:
 * Open chrome://extensions/ on your google chrome web browser.
