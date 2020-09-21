@@ -1,0 +1,10 @@
+{
+    "name": "cric-extension",
+    "description": "A chrome extension for complete cricket experience!",
+    "version": "0.1",
+    "manifest_version": 2,
+    "browser_action":{
+        "default_icon": "bat.png", 
+        "default_popup": "popup.html" 
+    }
+}
