@@ -9,6 +9,7 @@ var uid2;
 fetch("https://cricapi.com/api/cricket/Wh4CFtViqVbDCgaYC61AIw45UUM2")
 	.then(response => response.json())
             .then(data => {
+				console.log(data);
 				var m1t = data.data[0].title;
 				var m2t = data.data[1].title;
 				m1title.textContent = m1t;
@@ -49,6 +50,7 @@ var m2score = document.getElementById("m2score");
 	fetch("http://cricapi.com/api/cricketScore/Wh4CFtViqVbDCgaYC61AIw45UUM2?unique_id="+uid)
 	.then(response => response.json())
             .then(data => {
+				console.log(data);
 				var score = data.stat;
 				m2score.textContent = score;
 				})
@@ -58,3 +60,5 @@ var m2score = document.getElementById("m2score");
 	  });
 
 }
+
+document.getElementById('refresh').onclick = function() {history.go(0);};
